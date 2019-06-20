@@ -1,0 +1,28 @@
+applications:
+- name: cardinal-test-automation
+  host: cardinal-test-automation
+  domain: mybluemix.net
+  disk_quota: 1024M
+  path: .
+  command: node server.js
+  instances: 1
+  memory: 512M
+  env:
+    VERSION: 0.1
+    staging_api: https://cardinal-staging.us-south.containers.mybluemix.net/gateway/database/api
+    prod_api: https://cardinal-prod-us-east.us-east.containers.appdomain.cloud/gateway/database/api
+    releasey: https://cardinal-release-y.us-south.containers.mybluemix.net/gateway/database/api
+    releasex: https://cardinal-release-x.us-south.containers.mybluemix.net/gateway/database/api
+    platform: https://cardinal-database.mybluemix.net/api
+    training: https://cardinal-training.us-south.containers.mybluemix.net/gateway/database/api
+    tutorv2: https://tutorv2.us-south.containers.mybluemix.net/gateway/database/api
+    staging_key: 7fa9a930-0b79-4cdd-b72b-b26fd12c77fb
+    releasex_key: d266aae0-9fe9-11e7-abc4-cec278b6b50a
+    releasey_key: d266aae0-9fe9-11e7-abc4-cec278b6b50a
+    prod_key: e7233ce7-5007-4088-b43f-fbd17bf20018
+    training_key: 674bdf9e-6114-451e-9486-18564b7d3be3
+    tutorv2_key: 531441eb-0f1f-4a80-918c-41c457090623
+    TEST_GENERATION_API: https://cardinal-test.mybluemix.net/api/create
+    TEST_VALIDATION_API: https://cardinal-test.mybluemix.net/api/runtest
+    OBJECT_STORE_URL: https://cardinal-storage-api.mybluemix.net/api/storage
+    
