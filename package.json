@@ -14,7 +14,7 @@
     "cloudant": "^1.10.0-NOTICE",
     "consolidate": "^0.15.1",
     "cookie-parser": "^1.4.3",
-    "express": "4.16.3",
+    "express": "4.19.2",
     "express-session": "^1.14.2",
     "jade": ">= 0.26.1",
     "mustache": "^2.3.0",
